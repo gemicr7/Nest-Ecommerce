@@ -104,7 +104,6 @@ a {
   align-items: center;
   gap: 15px;
   position: relative;
-  z-index: 2;
 }
 
 .blogs-section .category input {
@@ -152,6 +151,7 @@ a {
   background-color: white;
   border-radius: 4px;
   top: 42px;
+  z-index: 2;
   display: none;
 }
 
