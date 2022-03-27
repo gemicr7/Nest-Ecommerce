@@ -1,0 +1,367 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing:border-box ;
+  -moz-box-sizing: border-box;
+  box-sizing:border-box ;
+  transition: 0.5s;
+}
+  
+:root {
+  --main-color:#3bb77e ;
+  --heading-Color:#253d4e ;
+  --hover-heading:#FDC040 ;
+  --text-color:#7e7e7e;
+  --hover-butten:#29A56C;
+  --main-transation:0.5s;
+}
+  
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 12px;
+  padding-right: 12px;
+  /* margin-left:0px;
+  margin-right: 0px; */
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1199px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Account Page */
+.account {
+  padding: 25px;
+}
+
+.account .wrapper-order {
+  margin-top: 60px;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.account .order-menu {
+  flex-basis: 25%;
+}
+
+.account .order-menu label {
+  display: block;
+  margin-bottom: 15px;
+  border: 1px solid #ececee;
+  border-radius: 10px;
+  padding: 20px 25px;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.account .order-menu label:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.account .order-menu label.active {
+  background-color: var(--main-color);
+  color: white;
+  border-color: var(--main-color);
+}
+
+.account .order-menu label i {
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.account .info-container {
+  flex-basis: 65%;
+}
+
+.account .info-container input:not(.main-input, .acc-input, .log-input, .reg) {
+  display: none;
+}
+
+#dash:checked + .text {
+  display: block;
+}
+
+.account h2 {
+  font-size: 32px;
+  color: var(--heading-Color);
+}
+
+.account .text {
+  display: none;
+}
+
+.account .text p {
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.account .text p span{
+  color: var(--main-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#order:checked + .table {
+  display: block;
+}
+
+.account .table {
+  display: none;
+}
+
+.account .table-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ececee;
+  padding: 25px;
+}
+
+.account .table-container .col:not(:last-child) {
+  border-right: 1px solid #ececee;
+  padding-right: 40px;
+}
+
+.account .table h3 {
+  color: #212529;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.account .table span {
+  display: block;
+  margin-bottom: 20px;
+  font-family: 'Lato', sans-serif;
+  color: #212529;
+  font-size: 14px;
+}
+
+.account .table a {
+  display: block;
+  margin-bottom: 15px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  color: var(--main-color);
+}
+
+.account .table a:hover {
+  color: var(--hover-heading);
+}
+
+.account .tracking {
+  display: none;
+}
+
+#track:checked + .tracking {
+  display: block;
+}
+
+.account .tracking p {
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.account .tracking form label {
+  font-family: 'Lato', sans-serif;
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.account .tracking form {
+  margin-top: 40px;
+  width: 500px;
+}
+
+.account .tracking form .main-input {
+  font-family: 'Lato', sans-serif;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ececee;
+  border-radius: 10px;
+  outline: none;
+  font-style: 14px;
+  caret-color: var(--heading-Color);
+}
+
+.account .tracking form input[type="submit"] {
+  background-color: var(--heading-Color);
+  border: none;
+  border-radius: 8px;
+  padding: 20px 40px;
+  color: white;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.account .tracking form input[type="submit"]:hover {
+  background-color: var(--main-color);
+}
+
+.account .address-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  display: none;
+}
+
+#address:checked + .address-wrap {
+  display: flex;
+}
+
+.account .address-wrap span {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.account .address-wrap a {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: var(--main-color);
+}
+
+.account .address-wrap a:hover {
+  color: var(--hover-heading);
+}
+
+.account .account-details {
+  display: none;
+}
+
+#details:checked + .account-details {
+  display: block;
+}
+
+.account .account-details p {
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+}
+
+.account .account-details p span {
+  color: var(--main-color);
+}
+
+.account .account-details form {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.account .account-details form .acc-input {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ececee;
+  border-radius: 10px;
+  outline: none;
+  font-style: 14px;
+  caret-color: var(--heading-Color);
+}
+
+.account .account-details form .acc-input:first-child, 
+.account .account-details form .acc-input:nth-child(2) {
+  width: 48%;
+}
+
+.account .account-details form .acc-input:nth-child(3),
+.account .account-details form .acc-input:nth-child(4),
+.account .account-details form .acc-input:nth-child(5),
+.account .account-details form .acc-input:nth-child(6) {
+  width: 98%;
+}
+
+.account .account-details form input[type="submit"] {
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 8px;
+  padding: 15px 30px;
+  color: white;
+  cursor: pointer;
+  width: fit-content;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.account .account-details form input[type="submit"]:hover {
+  background-color: var(--hover-butten);
+}
+/* End Account Page */
+
+/* Responsive */
+/* Large */
+@media (max-width: 1198px) {
+  .account .account-details form {
+    width: 100%;
+  }
+}
+/* Medium */
+@media (max-width: 991px) {
+  .account .wrapper-order {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .account .order-menu {
+    width: 100%;
+  }
+  .account .tracking form {
+    width: 100%;
+  }
+}
+/* Small */
+@media (max-width: 767px) {
+  .account .address-wrap {
+    flex-direction: column;
+  }
+  .account .account-details form .acc-input:first-child,
+  .account .account-details form .acc-input:nth-child(2) {
+    width: 100%;
+  }
+}
