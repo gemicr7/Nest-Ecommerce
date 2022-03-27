@@ -248,8 +248,8 @@ a {
   background-color: white;
   border-radius: 4px;
   top: 42px;
-  z-index: 2;
   display: none;
+  z-index: 2;
 }
 
 .catg-section .category .all-features ul a {
