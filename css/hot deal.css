@@ -69,7 +69,7 @@ a {
 }
 
 .snack .wrap-snack {
-  background-image: url('../images/header-bg.png.');
+  background-image: url('../images/header-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
